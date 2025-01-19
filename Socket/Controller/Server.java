@@ -23,7 +23,7 @@ public class Server {
       System.out.println("Mensagem recebida do cliente: " + messageFromClient);
 
       String[] coordenadas = messageFromClient.split(", ");
-      String result = (coordenadas.length < 1) ? "Coordenadas inválidas, impossível converter"
+      String result = (coordenadas.length != 2) ? "Coordenadas inválidas, impossível converter"
           : "Resultado: " + new ConversorCoordenadas().getCoordenadaPolar(Double.parseDouble(coordenadas[0]),
               Double.parseDouble(coordenadas[1]));
 

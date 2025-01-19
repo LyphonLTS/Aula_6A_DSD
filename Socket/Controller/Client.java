@@ -26,7 +26,7 @@ public class Client {
 
       // Recebe a resposta do servidor
       String response = in.readLine();
-      System.out.println("Resposta do servidor: " + response);
+      JOptionPane.showMessageDialog(null, response);
     } catch (IOException e) {
       System.out.println("Erro no cliente: " + e.getMessage());
       e.printStackTrace();
